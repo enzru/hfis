@@ -1,0 +1,410 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer; }
+
+p, h1, h2, h3 {
+  font-weight: normal; }
+
+h1,
+h2 {
+  font-family: "Galada", cursive;
+  text-align: center; }
+
+h2 {
+  color: #000; }
+
+.kv {
+  box-sizing: border-box;
+  background: url(../image/index/kv-sp.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  border: 12px solid #FFF; }
+  .kv-title {
+    display: block;
+    font-size: 14vw;
+    color: #FFF;
+    position: absolute;
+    bottom: 72px;
+    right: 0;
+    left: 0;
+    line-height: 16vw;
+    letter-spacing: 0.6vw; }
+  @media screen and (min-width: 600px) {
+    .kv {
+      border: 16px solid #FFF;
+      background: url(../image/index/kv-pc-1.jpg) repeat center center fixed;
+      background-size: cover; }
+      .kv-title {
+        font-size: 50px;
+        bottom: 80px;
+        letter-spacing: 2px; }
+        .kv-title br {
+          display: none; } }
+  @media screen and (min-width: 1000px) {
+    .kv {
+      background: url(../image/index/kv-pc-2.jpg) repeat center center fixed;
+      background-size: cover; }
+      .kv-title {
+        font-size: 6vw;
+        bottom: 56px; } }
+
+.contents {
+  width: 100vw; }
+  .contents h2 {
+    font-size: 7vw; }
+    @media screen and (min-width: 600px) {
+      .contents h2 {
+        font-size: 4vw; } }
+    @media screen and (min-width: 1000px) {
+      .contents h2 {
+        font-size: 2vw; } }
+  .contents-sightseeing {
+    position: relative;
+    background: url(../image/index/sightseeing.jpg) no-repeat center center;
+    background-size: 100% auto;
+    height: calc(100vw / 960 * 544);
+    box-sizing: border-box;
+    border: 1px solid #000; }
+    .contents-sightseeing h2 {
+      line-height: calc(100vw / 960 * 544); }
+      .contents-sightseeing h2 a {
+        display: block; }
+      @media screen and (min-width: 600px) {
+        .contents-sightseeing h2 {
+          font-size: 5vw; } }
+    .contents-sightseeing-video {
+      display: none; }
+    @media screen and (min-width: 600px) {
+      .contents-sightseeing {
+        background: none; }
+        .contents-sightseeing-video {
+          position: absolute;
+          display: block;
+          height: auto;
+          width: 100vw;
+          top: 0;
+          z-index: -1; } }
+    @media screen and (min-width: 1000px) {
+      .contents-sightseeing {
+        border: none;
+        height: 400px;
+        overflow: hidden; }
+        .contents-sightseeing h2 {
+          line-height: 400px; }
+        .contents-sightseeing-video {
+          position: fixed;
+          min-width: 100%;
+          min-height: 100%;
+          width: auto;
+          height: auto;
+          z-index: -1; } }
+  .contents-history, .contents-hotels, .contents-museum, .contents-restaurants, .contents-architecture, .contents-shopping {
+    display: block; }
+  .contents-history {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-top: none;
+    border-top: none;
+    background: url(../image/index/history-1.jpg); }
+    .contents-history:hover {
+      background: url(../image/index/history-2.jpg); }
+    @media screen and (min-width: 600px) {
+      .contents-history {
+        border-right: none; } }
+  .contents-hotels {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-top: none;
+    background: url(../image/index/hotel-1.jpg); }
+    .contents-hotels:hover {
+      display: block;
+      background: url(../image/index/hotel-2.jpg); }
+  .contents-history, .contents-hotels {
+    width: 100vw;
+    height: 100vw;
+    background-size: 100vw 100vw;
+    line-height: 100vw; }
+    .contents-history:hover, .contents-hotels:hover {
+      background-size: 100vw 100vw; }
+    @media screen and (min-width: 600px) {
+      .contents-history, .contents-hotels {
+        width: 50vw;
+        height: 50vw;
+        background-size: 50vw 50vw;
+        line-height: 50vw; }
+        .contents-history:hover, .contents-hotels:hover {
+          background-size: 50vw 50vw; } }
+    @media screen and (min-width: 1000px) {
+      .contents-history, .contents-hotels {
+        width: 25vw;
+        height: 25vw;
+        background-size: 25vw 25vw;
+        line-height: 25vw;
+        border-top: 1px solid #000; }
+        .contents-history:hover, .contents-hotels:hover {
+          background-size: 25vw 25vw; } }
+  .contents-museum {
+    background: url(../image/index/museum-1.jpg);
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-top: none;
+    width: 100vw;
+    height: 50vw;
+    background-size: 100vw 50vw;
+    line-height: 80vw; }
+    .contents-museum:hover {
+      background: url(../image/index/museum-2.jpg); }
+    .contents-museum:hover {
+      background-size: 100vw 50vw; }
+    @media screen and (min-width: 600px) {
+      .contents-museum {
+        width: 50vw;
+        height: 25vw;
+        background-size: 50vw 25vw;
+        line-height: 40vw; }
+        .contents-museum:hover {
+          background-size: 50vw 25vw; } }
+    @media screen and (min-width: 1000px) {
+      .contents-museum {
+        width: 25vw;
+        height: 12.5vw;
+        background-size: 25vw 12.5vw;
+        line-height: 20.5vw;
+        border-top: 1px solid #000; }
+        .contents-museum:hover {
+          background-size: 25vw 12.5vw; } }
+  .contents-restaurants {
+    background: url(../image/index/restaurants-1.jpg);
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-top: none;
+    width: 100vw;
+    height: 50vw;
+    background-size: 100vw 50vw;
+    line-height: 80vw; }
+    .contents-restaurants:hover {
+      background: url(../image/index/restaurants-2.jpg); }
+    .contents-restaurants:hover {
+      background-size: 100vw 50vw; }
+    @media screen and (min-width: 600px) {
+      .contents-restaurants {
+        width: 50vw;
+        height: 25vw;
+        background-size: 50vw 25vw;
+        line-height: 40vw; }
+        .contents-restaurants:hover {
+          background-size: 50vw 25vw; } }
+    @media screen and (min-width: 1000px) {
+      .contents-restaurants {
+        width: 25vw;
+        height: 12.5vw;
+        background-size: 25vw 12.5vw;
+        line-height: 20.5vw; }
+        .contents-restaurants:hover {
+          background-size: 25vw 12.5vw; } }
+  .contents-architecture {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-top: none;
+    background: url(../image/index/architecture-1.jpg);
+    width: 50vw;
+    height: 100vw;
+    background-size: 50vw 100vw;
+    line-height: 25vw; }
+    .contents-architecture:hover {
+      background: url(../image/index/architecture-2.jpg); }
+    .contents-architecture:hover {
+      background-size: 50vw 100vw; }
+    @media screen and (min-width: 600px) {
+      .contents-architecture {
+        width: 25vw;
+        height: 50vw;
+        background-size: 25vw 50vw;
+        line-height: 12vw; }
+        .contents-architecture:hover {
+          background-size: 25vw 50vw; } }
+    @media screen and (min-width: 1000px) {
+      .contents-architecture {
+        width: 12.5vw;
+        height: 25vw;
+        background-size: 12.5vw 25vw;
+        line-height: 7vw;
+        border-left: none;
+        border-top: 1px solid #000; }
+        .contents-architecture:hover {
+          background-size: 12.5vw 25vw; } }
+  .contents-shopping {
+    background: url(../image/index/shopping-1.jpg);
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-top: none;
+    border-left: none;
+    width: 50vw;
+    height: 100vw;
+    background-size: 50vw 100vw;
+    line-height: 176vw; }
+    .contents-shopping:hover {
+      background: url(../image/index/shopping-2.jpg); }
+    .contents-shopping:hover {
+      background-size: 50vw 100vw; }
+    @media screen and (min-width: 600px) {
+      .contents-shopping {
+        width: 25vw;
+        height: 50vw;
+        background-size: 25vw 50vw;
+        line-height: 88vw;
+        border-right: none; }
+        .contents-shopping:hover {
+          background-size: 25vw 50vw; } }
+    @media screen and (min-width: 1000px) {
+      .contents-shopping {
+        width: 12.5vw;
+        height: 25vw;
+        background-size: 12.5vw 25vw;
+        line-height: 44vw;
+        border-top: 1px solid #000; }
+        .contents-shopping:hover {
+          background-size: 12.5vw 25vw; } }
+  .contents-flexSmall {
+    display: flex; }
+  @media screen and (min-width: 600px) {
+    .contents-flexMedium {
+      display: flex; } }
+  @media screen and (min-width: 1000px) {
+    .contents-flexLarge {
+      display: flex; } }
+
+@media screen and (min-width: 1000px) {
+  .foot {
+    margin-top: 20px; } }
+
+.foot p {
+  font-family: "Open Sans", sans-serif; }
+
+.foot-flex {
+  display: flex; }
+
+.foot-share, .foot-connect {
+  box-sizing: border-box;
+  display: block;
+  width: 50vw;
+  height: 60px;
+  background: #FFF;
+  text-align: center;
+  line-height: 60px;
+  font-size: 13px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-top: none; }
+  .foot-share a, .foot-connect a {
+    display: block; }
+  @media screen and (min-width: 600px) {
+    .foot-share, .foot-connect {
+      box-sizing: border-box;
+      display: block;
+      width: 25vw;
+      height: 60px;
+      background: #FFF;
+      text-align: center;
+      line-height: 60px;
+      font-size: 13px; } }
+
+.foot-share {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .foot-share img {
+    display: block;
+    width: 18px;
+    height: auto;
+    padding-left: 16px; }
+    @media screen and (min-width: 600px) {
+      .foot-share img {
+        width: 16px; } }
+  @media screen and (min-width: 1000px) {
+    .foot-share {
+      border-right: none;
+      border-top: 1px solid #000; } }
+
+.foot-connect {
+  border-left: none; }
+  @media screen and (min-width: 600px) {
+    .foot-connect {
+      border-right: none; } }
+  @media screen and (min-width: 1000px) {
+    .foot-connect {
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+      border-left: 1px solid #000; } }
+
+.foot-copyRight {
+  box-sizing: border-box;
+  display: block;
+  width: 100vw;
+  height: 60px;
+  background: #FFF;
+  text-align: center;
+  line-height: 60px;
+  font-size: 13px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-top: none; }
+  @media screen and (min-width: 600px) {
+    .foot-copyRight {
+      box-sizing: border-box;
+      display: block;
+      width: 50vw;
+      height: 60px;
+      background: #FFF;
+      text-align: center;
+      line-height: 60px;
+      font-size: 13px; } }
+  @media screen and (min-width: 1000px) {
+    .foot-copyRight {
+      border-left: none;
+      border-top: 1px solid #000; } }
+
+@media screen and (min-width: 600px) {
+  .foot {
+    display: flex; } }
